@@ -1,0 +1,9 @@
+node_modules
+.envrc
+.direnv
+.pre-commit-config.yaml
+*.log
+*.aux
+*.out
+*.pdf
+result

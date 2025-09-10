@@ -1,0 +1,37 @@
+\documentclass[
+  lualatex,
+  article,
+  titlepage,
+  paper=a4,
+]{jlreq}
+\usepackage[ipa]{luatexja-preset}
+\usepackage[
+  pdfencoding=auto
+  psdextra,
+  pdfusetitle,
+  hidelinks,
+  pdfversion=1.7,
+  pdfa,
+]{hyperref}
+\usepackage{hyperxmp}
+\usepackage{pxrubrica}
+
+\hypersetup{
+  pdfapart=3,
+  pdfaconformance=u,
+  keeppdfinfo,
+}
+
+\immediate\pdfobj stream attr{/N 3} file{sRGB.icc}
+\pdfextension catalog{
+  /OutputIntents [
+    <<
+    /Type /OutputIntent
+    /S /GTS_PDFA1
+    /DestOutputProfile \the\pdflastobj\space 0 R
+    /OutputConditionIdentifier (sRGB)
+    /Info (sRGB)
+    >>
+  ]
+}
+\pdfvariable omitcidset=1
