@@ -76,12 +76,9 @@
                 # keep-sorted start
                 filehook
                 fontspec
-                haranoaji
-                haranoaji-extra
                 hyperref
                 hyperxmp
                 ifmtarg
-                ipaex
                 jlreq
                 luacode
                 luatexja
