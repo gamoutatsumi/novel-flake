@@ -1,6 +1,4 @@
 {
-  description = "Tatsumi GAMOU's Blog";
-
   inputs = {
     # keep-sorted start block=yes
     flake-parts = {
@@ -87,9 +85,12 @@
                 jlreq
                 luacode
                 luatexja
+                newunicodechar
                 pxrubrica
                 xkeyval
                 # keep-sorted end
+                (pkgs.callPackage ./nix/fonts/koburimin.nix { })
+                (pkgs.callPackage ./nix/fonts/nombre.nix { })
               ]
             );
           in
@@ -187,9 +188,6 @@
                   enable = true;
                 };
                 nixfmt = {
-                  enable = true;
-                };
-                texfmt = {
                   enable = true;
                 };
                 # keep-sorted end

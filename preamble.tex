@@ -1,10 +1,15 @@
 \documentclass[
+  landscape,
   lualatex,
   article,
   titlepage,
   paper=a4,
+  tate,
+  line_length=42zw,
+  number_of_lines=34,
 ]{jlreq}
-\usepackage[ipa]{luatexja-preset}
+\usepackage[no-math,deluxe,expert]{luatexja-preset}
+\usepackage{newunicodechar}
 \usepackage[
   pdfencoding=auto
   psdextra,
@@ -15,12 +20,21 @@
 ]{hyperref}
 \usepackage{hyperxmp}
 \usepackage{pxrubrica}
+\jfontspec{GenEiKoburiMincho-v6}\fontspec{GenEiKoburiMincho-v6}
+
+\ModifyPageStyle{plain}{
+  nombre_font={\fontspec{GenEiNombreRoman}},
+  nombre_position=bottom-center
+}
+\pagestyle{plain}
 
 \hypersetup{
   pdfapart=3,
   pdfaconformance=u,
   keeppdfinfo,
 }
+
+\setlength{\parindent}{0pt}
 
 \immediate\pdfobj stream attr{/N 3} file{sRGB.icc}
 \pdfextension catalog{
@@ -35,3 +49,19 @@
   ]
 }
 \pdfvariable omitcidset=1
+
+\newcommand{\zenaki}{\hskip1\zw plus .125\zw minus 0.03125\zw}
+\newcommand{\tcy}[1]{\tatechuyoko{#1}}
+
+\makeatletter
+\chardef\my@J@horizbar="2015
+\newunicodechar{―}{\x@my@dash}
+\def\x@my@dash{\@ifnextchar―{%
+  \my@J@horizbar\kern-.5\zw\my@J@horizbar\kern-.5\zw}{%
+    \my@J@horizbar}}
+\makeatother
+
+\rubysetup{||J>}
+\kentenmarkintate{sesame}
+
+\date{}
