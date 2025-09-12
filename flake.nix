@@ -99,6 +99,7 @@
                   name = "build";
                   runtimeInputs = [ texlive ];
                   text = ''
+                    luaotfload-tool --update
                     lualatex text.tex
                   '';
                 };
