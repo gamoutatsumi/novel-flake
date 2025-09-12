@@ -92,21 +92,16 @@
             );
           in
           {
-            packages = {
-              default = pkgs.stdenvNoCC.mkDerivation {
-                name = "tex-build";
-                src = lib.sources.sourceFilesBySuffices ./. [ ".tex" ];
-                buildInputs = [
-                  texlive
-                ];
-                buildPhase = ''
-                  export TEXMFVAR=$(mktemp -d)
-                  lualatex text.tex
-                '';
-                installPhase = ''
-                  mkdir -p $out
-                  cp text.pdf $out/text.pdf
-                '';
+            apps = {
+              build = {
+                type = "app";
+                program = pkgs.writeShellApplication {
+                  name = "build";
+                  runtimeInputs = [ texlive ];
+                  text = ''
+                    lualatex text.tex
+                  '';
+                };
               };
             };
             devShells = {
