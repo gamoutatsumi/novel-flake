@@ -2,7 +2,8 @@ name: Build PDF and Upload to Artifacts
 
 on:
   push:
-    - main
+    branches:
+      - main
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
