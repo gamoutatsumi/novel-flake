@@ -1,6 +1,6 @@
 module.exports = {
 	plugins: ["latex2e"],
-	filters: {},
+	filters: { comments: true },
 	rules: {
 		"general-novel-style-ja": {
 			chars_leading_paragraph: "　「『（【〈《“‘［〔｛＜",

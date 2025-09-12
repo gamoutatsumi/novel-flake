@@ -2,8 +2,7 @@
   landscape,
   lualatex,
   article,
-  titlepage,
-  paper=a4,
+  paper=a5,
   tate,
   line_length=42zw,
   number_of_lines=34,
@@ -58,6 +57,7 @@
 
 \newcommand{\zenaki}{\hskip1\zw plus .125\zw minus 0.03125\zw}
 \newcommand{\tcy}[1]{\tatechuyoko{#1}}
+\newcommand{\parbr}{\vskip\baselineskip}
 
 \makeatletter
 \chardef\my@J@horizbar="2015
@@ -71,3 +71,6 @@
 \kentenmarkintate{sesame}
 
 \date{}
+
+\renewcommand{\abstractname}{あらすじ}
+\setcounter{page}0
