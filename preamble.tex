@@ -8,7 +8,14 @@
   line_length=42zw,
   number_of_lines=34,
 ]{jlreq}
+
 \usepackage[no-math,deluxe,expert]{luatexja-preset}
+\setmainjfont[
+  YokoFeatures={JFM=jlreq},
+  TateFeatures={JFM=jlreqv},
+]{GenEiKoburiMincho-v6}
+\setmainfont{GenEiKoburiMincho-v6}
+
 \usepackage{newunicodechar}
 \usepackage[
   pdfencoding=auto
@@ -20,7 +27,6 @@
 ]{hyperref}
 \usepackage{hyperxmp}
 \usepackage{pxrubrica}
-\jfontspec{GenEiKoburiMincho-v6}\fontspec{GenEiKoburiMincho-v6}
 
 \ModifyPageStyle{plain}{
   nombre_font={\fontspec{GenEiNombreRoman}},

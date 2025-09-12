@@ -76,7 +76,6 @@
                 # keep-sorted start
                 filehook
                 fontspec
-                haranoaji
                 hyperref
                 hyperxmp
                 ifmtarg
