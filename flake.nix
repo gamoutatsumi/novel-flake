@@ -76,7 +76,6 @@
                 # keep-sorted start
                 filehook
                 fontspec
-                haranoaji
                 hyperref
                 hyperxmp
                 ifmtarg
@@ -85,6 +84,7 @@
                 luatexja
                 newunicodechar
                 pxrubrica
+                texdoc
                 xkeyval
                 # keep-sorted end
                 (pkgs.callPackage ./nix/fonts/koburimin.nix { })
