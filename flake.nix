@@ -131,6 +131,7 @@
                     nil
                     nixfmt
                     nodePackages.npm
+                    texlab
                     # keep-sorted end
                   ])
                   ++ [ texlive ];
