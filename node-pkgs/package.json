@@ -4,18 +4,18 @@
 	"version": "0.0.1",
 	"private": true,
 	"devDependencies": {
-		"textlint": "^15.2.2",
-		"textlint-filter-rule-comments": "^1.2.2",
-		"textlint-plugin-latex2e": "^1.2.1",
-		"textlint-rule-general-novel-style-ja": "^1.3.0",
-		"textlint-rule-ja-no-abusage": "^3.0.0",
-		"textlint-rule-ja-no-redundant-expression": "^4.0.1",
-		"textlint-rule-ja-no-space-between-full-width": "^2.4.2",
-		"textlint-rule-ja-unnatural-alphabet": "^2.0.1",
-		"textlint-rule-max-ten": "^5.0.0",
-		"textlint-rule-no-doubled-conjunction": "^3.0.0",
-		"textlint-rule-no-doubled-joshi": "^5.1.1",
-		"textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
-		"textlint-rule-prefer-tari-tari": "^1.0.3"
+		"textlint": "15.2.2",
+		"textlint-filter-rule-comments": "1.2.2",
+		"textlint-plugin-latex2e": "1.2.1",
+		"textlint-rule-general-novel-style-ja": "1.3.0",
+		"textlint-rule-ja-no-abusage": "3.0.0",
+		"textlint-rule-ja-no-redundant-expression": "4.0.1",
+		"textlint-rule-ja-no-space-between-full-width": "2.4.2",
+		"textlint-rule-ja-unnatural-alphabet": "2.0.1",
+		"textlint-rule-max-ten": "5.0.0",
+		"textlint-rule-no-doubled-conjunction": "3.0.0",
+		"textlint-rule-no-doubled-joshi": "5.1.1",
+		"textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "1.0.1",
+		"textlint-rule-prefer-tari-tari": "1.0.3"
 	}
 }
