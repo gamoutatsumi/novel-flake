@@ -130,11 +130,13 @@
                     efm-langserver
                     nil
                     nixfmt
-                    nodePackages.npm
                     texlab
                     # keep-sorted end
                   ])
-                  ++ [ texlive ];
+                  ++ [
+                    texlive
+                    nodejs
+                  ];
               };
             };
             pre-commit = {
