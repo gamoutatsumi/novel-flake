@@ -162,6 +162,7 @@
                       "ts"
                       # keep-sorted end
                     ];
+                    excludes = [ "package-lock\\.json" ];
                   };
                   treefmt = {
                     enable = true;
